@@ -1,0 +1,4 @@
+FROM bigtruedata/sbt:latest
+
+CMD ["tail", "-f", "/dev/null"]
+

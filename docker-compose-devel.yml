@@ -1,0 +1,15 @@
+version: '2'
+services:
+  springscala:
+    ports:
+        - '8080:8080'
+    volumes:
+      - .:/app
+    build:
+      dockerfile: docker/spring_jaxrs_scala/Dockerfile.devel
+      context: .
+
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
